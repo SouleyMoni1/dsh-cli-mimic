@@ -1,6 +1,6 @@
 {
   "name": "dsh-cli-mimic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "在 DSH 中把模型请求伪装成多种 CLI 请求的全局代理插件",
   "private": false,
   "type": "module",
@@ -8,6 +8,7 @@
   "types": "./lib/types/index.d.ts",
   "files": [
     "lib",
+    "cordis.patch.yml",
     "README.md"
   ],
   "license": "BSD-3-Clause",
@@ -60,6 +61,9 @@
     "./package.json": "./package.json"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "inject": [
         "@deepseek-ai/dsh-client-runtime",
