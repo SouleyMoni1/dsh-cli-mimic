@@ -47,6 +47,7 @@ mkdir -p node_modules/@deepseek-ai
 node -e "const fs=require('fs');fs.rmSync('node_modules/@standard-schema',{recursive:true,force:true})"
 if [ -d "$CHECKOUT/packages" ]; then
   link_pkg cordis vendor/cordis
+  link_pkg @deepseek-ai/cordis vendor/cordis
   link_pkg cosmokit vendor/cosmokit
   link_pkg schemastery vendor/schemastery
   link_pkg @deepseek-ai/dsh-tools packages/core/tools
@@ -59,6 +60,7 @@ if [ -d "$CHECKOUT/packages" ]; then
   link_pkg react node_modules/react
 else
   link_pkg cordis node_modules/@deepseek-ai/cordis
+  link_pkg @deepseek-ai/cordis node_modules/@deepseek-ai/cordis
   link_pkg cosmokit node_modules/@deepseek-ai/cosmokit
   link_pkg schemastery node_modules/@deepseek-ai/schemastery
   link_pkg @deepseek-ai/dsh-tools node_modules/@deepseek-ai/dsh-tools

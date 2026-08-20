@@ -1,6 +1,6 @@
 {
   "name": "dsh-cli-mimic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "在 DSH 中把模型请求伪装成多种 CLI 请求的全局代理插件",
   "private": false,
   "type": "module",
@@ -32,11 +32,11 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0-rc <5",
     "@deepseek-ai/dsh-credentials": ">=0.0.1-rc <2",
     "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2",
     "@deepseek-ai/dsh-settings": ">=0.0.1-rc <2",
     "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
-    "cordis": ">=4.0.0-rc <5",
     "schemastery": "^3.18.0"
   },
   "devDependencies": {
