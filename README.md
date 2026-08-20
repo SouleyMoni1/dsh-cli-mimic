@@ -34,9 +34,17 @@ DSH 里任何 provider/model 发出的模型请求都会被全局拦截，先经
 - 额外请求体 JSON
 - 本地代理端口
 
-## npm / Git 安装
+## 安装
 
 包名：`dsh-cli-mimic`。
+
+用 DSH 自带命令安装（推荐）：
+
+```bash
+dsh plugin --profile web add dsh-cli-mimic
+```
+
+用 npm 直接安装：
 
 ```bash
 npm install dsh-cli-mimic
@@ -46,6 +54,12 @@ npm install dsh-cli-mimic
 
 ```bash
 npm install github:SouleyMoni1/dsh-cli-mimic
+```
+
+卸载：
+
+```bash
+dsh plugin --profile web remove dsh-cli-mimic
 ```
 
 ## 构建与注入
