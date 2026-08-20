@@ -1,0 +1,9 @@
+# dsh-cli-mimic bundle patch — applied automatically when installed with
+# `dsh plugin --profile <name> add dsh-cli-mimic`.
+#
+# Uninstall with:
+#   dsh plugin --profile <name> remove dsh-cli-mimic
+
+- insert:
+    - id: cli-mimic
+      name: dsh-cli-mimic
